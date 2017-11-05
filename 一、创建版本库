@@ -19,4 +19,16 @@
 
   ps: word也是二进制格式的文件，因此只能跟踪大小变化。
   
+  Notice:千万不要用windows自带记事本编辑任何文本文件。它会在每个文件开头添加0xefbbbf（十六进制）的字符，会遇到很多奇怪的问题，比如网页第一行显示一个"?"，明明正确的程序一编译就报语法错误等等。
+
+  把文件添加到仓库
+  $ git add readme.txt
+
+  把文件提交到仓库
+  $ git commit -m "wrote a readme file"
   
+# 查看仓库当前状态
+  $ git status
+
+  查看具体修改内容
+  $ git diff
